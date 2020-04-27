@@ -20,7 +20,7 @@
         <h3>章节选择</h3>
       </Col>
       <Col span="5" style="margin-left: 10px">
-        <Select v-model="selectSection" @on-change="selectSectionHandler(selectSection)">
+        <Select v-model="selectSection" @on-change="selectSectionHandler(selectSection)" :disabled="selectCourse === ''">
           <Option v-for="item in $store.state.sectionManage.sectionList" :value="item.id" :key="item.id">{{ item.name }}</Option>
         </Select>
       </Col>

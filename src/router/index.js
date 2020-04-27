@@ -8,6 +8,7 @@ import TeacherInfo from '@/views/TeacherInfo/index.vue'
 import CourseCheckManage from '@/views/CourseCheckManage/index.vue'
 import SectionManage from '@/views/SectionManage/index.vue'
 import VideoManage from '@/views/VideoManage/index.vue'
+import ResourceManage from '@/views/ResourceManage/index.vue'
 
 Vue.use(Router)
 
@@ -59,6 +60,12 @@ export default new Router({
           path: 'video',
           name: 'VideoManage',
           component: VideoManage
+        },
+        // 资源管理 ResourceManage
+        {
+          path: 'resource',
+          name: 'ResourceManage',
+          component: ResourceManage
         },
         /*测试*/
         {

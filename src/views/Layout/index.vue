@@ -11,39 +11,42 @@
               <router-link to="/admin/course"><MenuItem name="1-1">课程管理</MenuItem></router-link>
               <router-link to="/admin/section"><MenuItem name="1-2">章节管理</MenuItem></router-link>
               <router-link to="/admin/video"><MenuItem name="1-3">课时管理</MenuItem></router-link>
-              <MenuItem name="1-4">资源管理</MenuItem>
+              <router-link to="/admin/resource"><MenuItem name="1-4">资源管理</MenuItem></router-link>
+              <MenuItem name="1-5">学生管理</MenuItem>
+              <MenuItem name="1-6">课程公告</MenuItem>
+              <MenuItem name="1-7">课程反馈</MenuItem>
             </Submenu>
           <Submenu name="2">
             <template slot="title">
               <Icon type="ios-people" />
               <span>考试管理</span>
             </template>
-            <MenuItem name="2-1">学生账号管理</MenuItem>
-            <MenuItem name="2-2">教师账号管理</MenuItem>
+            <MenuItem name="2-1">试卷管理</MenuItem>
+            <MenuItem name="2-2">考试管理</MenuItem>
           </Submenu>
           <Submenu name="3">
             <template slot="title">
               <Icon type="ios-people" />
               <span>作业管理</span>
             </template>
-            <MenuItem name="3-1">学生账号管理</MenuItem>
-            <MenuItem name="3-2">教师账号管理</MenuItem>
+            <MenuItem name="3-1">作业发布</MenuItem>
+            <MenuItem name="3-2">作业审查</MenuItem>
           </Submenu>
           <Submenu name="4">
             <template slot="title">
               <Icon type="ios-people" />
               <span>成绩管理</span>
             </template>
-            <MenuItem name="4-1">学生账号管理</MenuItem>
-            <MenuItem name="4-2">教师账号管理</MenuItem>
+            <MenuItem name="4-1">成绩管理</MenuItem>
+            <MenuItem name="4-2">成绩统计</MenuItem>
           </Submenu>
           <Submenu name="5">
             <template slot="title">
               <Icon type="ios-people" />
               <span>签到管理</span>
             </template>
-            <MenuItem name="5-1">学生账号管理</MenuItem>
-            <MenuItem name="5-2">教师账号管理</MenuItem>
+            <MenuItem name="5-1">签到发布</MenuItem>
+            <MenuItem name="5-2">签到统计</MenuItem>
           </Submenu>
         </Menu>
       </Sider>
