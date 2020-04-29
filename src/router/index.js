@@ -9,6 +9,10 @@ import CourseCheckManage from '@/views/CourseCheckManage/index.vue'
 import SectionManage from '@/views/SectionManage/index.vue'
 import VideoManage from '@/views/VideoManage/index.vue'
 import ResourceManage from '@/views/ResourceManage/index.vue'
+import StudentCheck from '@/views/StudentManage/check.vue'
+import studentManage from '@/views/StudentManage/manage.vue'
+import AttendanceManage from '@/views/AttendanceManage/index.vue'
+
 
 Vue.use(Router)
 
@@ -66,6 +70,24 @@ export default new Router({
           path: 'resource',
           name: 'ResourceManage',
           component: ResourceManage
+        },
+        // 学生管理 申请审核
+        {
+          path: 'studentCheck',
+          name: 'studentCheck',
+          component: StudentCheck
+        },
+        // 学生管理 选课学生管理
+        {
+          path: 'studentManage',
+          name: 'studentManage',
+          component: studentManage
+        },
+        // 签到操作 AttendanceManage
+        {
+          path: 'attendance',
+          name: 'AttendanceManage',
+          component: AttendanceManage
         },
         /*测试*/
         {
