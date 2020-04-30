@@ -26,7 +26,7 @@
               <Icon type="ios-people" />
               <span>考试管理</span>
             </template>
-            <MenuItem name="3-1">试卷管理</MenuItem>
+            <router-link to="/admin/examManage"><MenuItem name="3-1">试卷发布</MenuItem></router-link>
             <MenuItem name="3-2">考试管理</MenuItem>
           </Submenu>
           <Submenu name="4">
@@ -34,7 +34,7 @@
               <Icon type="ios-people" />
               <span>作业管理</span>
             </template>
-            <MenuItem name="4-1">作业发布</MenuItem>
+            <router-link to="/admin/courseJobManage"><MenuItem name="4-1">作业发布</MenuItem></router-link>
             <MenuItem name="4-2">作业审查</MenuItem>
           </Submenu>
           <Submenu name="5">

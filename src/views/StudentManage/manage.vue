@@ -140,7 +140,7 @@
         })
       },
       selectCourseHandler(value) {
-        this.$store.dispatch("studentManage/doQueryAllByCourse", value)
+        this.$store.dispatch("studentManage/doQueryAllPassByCourse", value)
       }
     }
   }

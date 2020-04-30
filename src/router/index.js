@@ -12,6 +12,8 @@ import ResourceManage from '@/views/ResourceManage/index.vue'
 import StudentCheck from '@/views/StudentManage/check.vue'
 import studentManage from '@/views/StudentManage/manage.vue'
 import AttendanceManage from '@/views/AttendanceManage/index.vue'
+import CourseJobManage from '@/views/CourseJobManage/manage.vue'
+import ExamManage from '@/views/ExamManage/manage.vue'
 
 
 Vue.use(Router)
@@ -89,6 +91,20 @@ export default new Router({
           name: 'AttendanceManage',
           component: AttendanceManage
         },
+        // 作业管理 作业发布
+        {
+          path: 'courseJobManage',
+          name: 'CourseJobManage',
+          component: CourseJobManage
+        },
+
+        // 试卷管理 试卷发布
+        {
+          path: 'examManage',
+          name: 'ExamManage',
+          component: ExamManage
+        },
+
         /*测试*/
         {
           path: 'loginManage',

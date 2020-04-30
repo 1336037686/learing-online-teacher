@@ -291,7 +291,6 @@
             this.$store.dispatch("courseManage/doRemove", {"data": {"id": data.id}, "currentPage": this.currentPage})
           }
         });
-
       },
       handleSuccess (res, file) {
         this.$Notice.info({title: res.head.message , desc: ''});

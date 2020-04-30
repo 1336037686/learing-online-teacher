@@ -125,7 +125,6 @@ const actions = {
   async doUpdate({dispatch, commit}, data) {
     commit("SET_SAVE_LODING", true)
     await axios.put("/api/v1/course/update", {"head": {"token": store.state.loginManage.token}, "body":{"data": data.data}}).then(response => {
-      console.log(JSON.stringify(response))
       if(response.data.head.responseCode != "200") {
         Notice.error({title: response.data.head.message , desc: ''});
       } else {
