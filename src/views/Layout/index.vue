@@ -35,7 +35,7 @@
               <span>作业管理</span>
             </template>
             <router-link to="/admin/courseJobManage"><MenuItem name="4-1">作业发布</MenuItem></router-link>
-            <MenuItem name="4-2">作业审查</MenuItem>
+            <router-link to="/admin/courseJobCheck"><MenuItem name="4-2">作业审查</MenuItem></router-link>
           </Submenu>
           <Submenu name="5">
             <template slot="title">

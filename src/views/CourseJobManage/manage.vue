@@ -247,7 +247,7 @@
       // 查看
       show(index) {
         let data = this.$store.state.courseJobManage.courseJobData[index];
-        this.showModelForm = data
+        this.showModelForm = JSON.parse(JSON.stringify(data))
         this.showModelState = true
       },
       //下载

@@ -13,6 +13,7 @@ import StudentCheck from '@/views/StudentManage/check.vue'
 import studentManage from '@/views/StudentManage/manage.vue'
 import AttendanceManage from '@/views/AttendanceManage/index.vue'
 import CourseJobManage from '@/views/CourseJobManage/manage.vue'
+import CourseJobCheck from '@/views/CourseJobManage/check.vue'
 import ExamManage from '@/views/ExamManage/manage.vue'
 
 
@@ -97,6 +98,13 @@ export default new Router({
           name: 'CourseJobManage',
           component: CourseJobManage
         },
+        // 作业管理 作业批改
+        {
+          path: 'courseJobCheck',
+          name: 'courseJobCheck',
+          component: CourseJobCheck
+        },
+
 
         // 试卷管理 试卷发布
         {
