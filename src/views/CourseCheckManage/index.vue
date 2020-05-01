@@ -192,7 +192,15 @@
             title: '审核状态',
             key: 'checkState',
             render: (h, params) => {
-              return h('span', params.row.checkState == 0 ? "未审核" : "已审核");
+              const row = params.row;
+              const color = row.checkState === '0'? 'error': 'success';
+              const text = row.checkState === '0'? '未审核': '已审核';
+              return h('Tag', {
+                props: {
+                  type: 'dot',
+                  color: color
+                }
+              }, text);
             }
           },
           {

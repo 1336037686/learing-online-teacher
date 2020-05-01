@@ -15,7 +15,7 @@ import AttendanceManage from '@/views/AttendanceManage/index.vue'
 import CourseJobManage from '@/views/CourseJobManage/manage.vue'
 import CourseJobCheck from '@/views/CourseJobManage/check.vue'
 import ExamManage from '@/views/ExamManage/manage.vue'
-
+import ExamCheck from '@/views/ExamManage/check.vue'
 
 Vue.use(Router)
 
@@ -104,15 +104,18 @@ export default new Router({
           name: 'courseJobCheck',
           component: CourseJobCheck
         },
-
-
         // 试卷管理 试卷发布
         {
           path: 'examManage',
           name: 'ExamManage',
           component: ExamManage
         },
-
+        // 试卷管理 试卷批改
+        {
+          path: 'examCheck',
+          name: 'examCheck',
+          component: ExamCheck
+        },
         /*测试*/
         {
           path: 'loginManage',

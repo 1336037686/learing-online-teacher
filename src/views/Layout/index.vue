@@ -27,7 +27,7 @@
               <span>考试管理</span>
             </template>
             <router-link to="/admin/examManage"><MenuItem name="3-1">试卷发布</MenuItem></router-link>
-            <MenuItem name="3-2">考试管理</MenuItem>
+            <router-link to="/admin/examCheck"><MenuItem name="3-2">考试批改</MenuItem></router-link>
           </Submenu>
           <Submenu name="4">
             <template slot="title">
