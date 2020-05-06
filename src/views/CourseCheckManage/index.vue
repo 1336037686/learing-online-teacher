@@ -193,8 +193,8 @@
             key: 'checkState',
             render: (h, params) => {
               const row = params.row;
-              const color = row.checkState === '0'? 'error': 'success';
-              const text = row.checkState === '0'? '未审核': '已审核';
+              const color = row.checkState === '0'? 'warning': row.checkState === '1' ? 'success' : 'error';
+              const text = row.checkState === '0'? '未审核': row.checkState === '1'? '已通过' : '未通过';
               return h('Tag', {
                 props: {
                   type: 'dot',

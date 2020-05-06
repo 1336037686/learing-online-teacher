@@ -26,8 +26,8 @@
               <strong>{{ row.name }}</strong>
             </template>
             <template slot-scope="{ row, index }" slot="action">
-              <Button type="info" size="small" style="margin-right: 5px" @click="update(index, 'success')" :disabled="$store.state.studentManage.studentData[index].checkState === '1'">通过</Button>
-              <Button type="error" size="small" @click="update(index, 'fail')" :disabled="$store.state.studentManage.studentData[index].checkState === '1'">不通过</Button>
+              <Button type="info" size="small" style="margin-right: 5px" @click="update(index, 'success')" :disabled="$store.state.studentManage.studentData[index].checkState !== '0'">通过</Button>
+              <Button type="error" size="small" @click="update(index, 'fail')" :disabled="$store.state.studentManage.studentData[index].checkState !== '0'">不通过</Button>
             </template>
           </Table>
         </Col>
@@ -80,8 +80,8 @@
             key: 'checkState',
             render: (h, params) => {
               const row = params.row;
-              const color = row.checkState === '1' ? 'success' : 'error';
-              const text = row.checkState === '1' ? '通过' : '未通过';
+              const color = row.checkState === '1' ? 'success' : row.checkState === '0' ? 'warning' : 'error';
+              const text = row.checkState === '1' ? '通过' : row.checkState === '0' ? '待审核' : '未通过';
               return h('Tag', {
                 props: {
                   type: 'dot',
@@ -111,7 +111,7 @@
           checkState = '1'
         }
         if(type === 'fail') {
-          checkState = '0'
+          checkState = '2'
         }
         let data = this.$store.state.studentManage.studentData[index];
         this.$Modal.confirm({
